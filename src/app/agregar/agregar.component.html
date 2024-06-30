@@ -1,0 +1,41 @@
+<div class="contenedorPrincipal">
+    <form [formGroup]="alumnoForm" (ngSubmit)="onSubmit()">
+        <h2>Agregar Alumno</h2>
+        <br>
+        <br>
+        <div class="card flex justify-content-center">
+            <p-floatLabel class="inputNomral">
+                <input type="text" id="nombre" formControlName="nombre" class="inputNomral" />
+                <label for="nombre">Nombre</label>
+            </p-floatLabel>
+        </div>
+        <br>
+        <br>
+        <div>
+            <p-floatLabel class="inputNomral">
+                <input id="paterno" formControlName="paterno" class="inputNomral">
+                <label for="paterno">Apellido Paterno:</label>
+            </p-floatLabel>
+        </div>
+        <br>
+        <br>
+        <div>
+            <p-floatLabel class="inputNomral">
+                <input id="materno" formControlName="materno" class="inputNomral">
+                <label for="materno">Apellido Materno:</label>
+            </p-floatLabel>
+        </div>
+        <br>
+        <br>
+        <div>
+            <p-floatLabel class="inputNomral">
+                <input id="email" formControlName="email" class="inputNomral">
+                <label for="email">Email:</label>
+            </p-floatLabel>
+        </div>
+        <br>
+        <br>
+        <button pButton pRipple label="Agregar" class="p-button-success">
+        </button>
+    </form>
+</div>
